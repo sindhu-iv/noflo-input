@@ -1,0 +1,57 @@
+{
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {
+      
+      "getElement": {
+        "component": "doSomething"
+      },
+      "html": {
+        "component": "dom/WriteHtml"
+      },
+      "Stringemplate":{
+        "component":"strings/StringTemplate"
+      }
+    },
+    "connections": [
+      {
+        "src": {
+          "process": "getElement",
+          "port": "element"
+        },
+        "tgt": {
+          "process": "getElement",
+          "port": "in"
+        }
+      },
+      {
+        "src": {
+          "process": "getElement",
+          "port": "element"
+        },
+        "tgt": {
+          "process": "html",
+          "port": "container"
+        }
+      },
+      {
+        "src": {
+          "process": "html",
+          "port": "html"
+        },
+        "tgt": {
+          "process": "StringTemplate",
+          "port": "out"
+        }
+      },
+      {
+        "data":4,
+        "tgt":{
+          "process":"getElement",
+          "port":"element"
+        }
+      }
+    ],
+    "caseSensitive": false
+  }

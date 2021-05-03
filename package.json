@@ -1,0 +1,16 @@
+{
+    "name": "noflo-input-example",
+    "version": "0.0.1",
+    "dependencies": {
+        "noflo": "^1.4.3",
+        "noflo-core": "^0.6.1",
+        "noflo-dom": "^0.3.0",
+        "noflo-filesystem": "^2.2.0",
+        "noflo-html": "^0.3.0",
+        "noflo-nodejs": "^0.15.1"
+    },
+    "devDependencies": {
+        "coffeescript": "^2.5.1",
+        "noflo-component-loader": "^0.4.1"
+    }
+}

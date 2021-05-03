@@ -1,0 +1,15 @@
+{
+  "id": "801f6af9-61c4-48c7-a390-62e9ac22dd5e",
+  "label": "noflo-input-example NoFlo runtime",
+  "secret": "/graphs/graph.json",
+  "permissions": {
+    "/graphs/graph.json": [
+      "protocol:component",
+      "protocol:runtime",
+      "protocol:graph",
+      "protocol:network",
+      "component:getsource",
+      "component:setsource"
+    ]
+  }
+}
